@@ -5,5 +5,5 @@ Library to manipulate Graphviz graphs (nodes, edges, attributes) and generate DO
 ## Installation
 
 ```bash
-composer require codraw/
+composer require codraw/graphviz
 ```

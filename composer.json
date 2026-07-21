@@ -5,8 +5,7 @@
     "type": "library",
     "keywords": [
         "draw",
-        "component",
-        "symfony"
+        "component"
     ],
     "authors": [
         {
@@ -15,7 +14,7 @@
         }
     ],
     "require": {
-        "php": ">=8.5"
+        "php": "^8.5"
     },
     "require-dev": {
         "phpunit/phpunit": "^11.3 || ^12.0"

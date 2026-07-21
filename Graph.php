@@ -16,8 +16,6 @@ class Graph implements \Stringable
      */
     private array $edges = [];
 
-    private bool $directed = false;
-
     public function __construct(
         private ?string $name = null,
         array|AttributeBag $attributes = [],
@@ -68,16 +66,18 @@ class Graph implements \Stringable
 
     public function __toString(): string
     {
+        $directed = false;
+
         foreach ($this->edges as $edge) {
             if ($edge->getDirected()) {
-                $this->directed = true;
+                $directed = true;
                 break;
             }
         }
 
         $result = \sprintf(
             '%s %s {',
-            $this->directed ? 'digraph' : 'graph',
+            $directed ? 'digraph' : 'graph',
             $this->name
         );
 

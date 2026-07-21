@@ -1,5 +1,5 @@
 {
-    "name": "draw/graphviz",
+    "name": "codraw/graphviz",
     "description": "Library to manipulate graphviz and generate dot format output",
     "license": "MIT",
     "type": "library",
@@ -31,5 +31,8 @@
         "branch-alias": {
             "dev-master": "0.38-dev"
         }
+    },
+    "replace": {
+        "draw/graphviz": "self.version"
     }
 }
